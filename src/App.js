@@ -17,7 +17,8 @@ class App extends Component {
         {this.state.pay.map(pay => (
           <PaymentCard
             Payee={pay.Payee}
-            payment={pay.Payment}
+            Payment={pay.Payment}
+            Remittance={pay.Remittance}
           />
         ))}
       </Wrapper>
