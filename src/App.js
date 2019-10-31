@@ -5,10 +5,19 @@ import Title from "./components/Title";
 import pay from "./pay.json";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activePage: 1,
+      pay
+    };
+  }
+  handlePageChange(pageNumber) {
+    console.log(`active page is ${pageNumber}`);
+    this.setState({activePage: pageNumber});
+  }
 
-  state = {
-    pay
-  };
+
 
   render() {
     return (
@@ -20,7 +29,7 @@ class App extends Component {
             Payment={pay.Payment}
             Remittance={pay.Remittance}
           />
-        ))}
+        ))};
       </Wrapper>
     );
   }
