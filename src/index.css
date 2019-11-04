@@ -3,8 +3,44 @@
   font-family: sans-serif;
 }
 
+.wrapper{
+  background-image: linear-gradient(to bottom right, rgb(214, 4, 179), rgb(143, 3, 136));
+}
+
 html, body, #root {
   padding: 0;
   margin: 0;
   height: 100%;
+}
+
+.pagination {
+  margin-top: 25px;
+  background-color: white;
+
+}
+
+.pagination span {
+cursor: pointer;
+color: black;
+float: left;
+padding: 8px 16px;
+text-decoration: none;
+transition: background-color .3s;
+border: 1px solid #ddd;
+}
+
+span:active {
+  background-color: rgb(141, 3, 95);
+  color: white;
+  border: 1px solid rgb(141, 3, 95);
+}
+
+
+span:hover, span:focus{
+  background-color: rgb(141, 3, 95);
+  border: 1px solid rgb(141, 3, 95);
+}
+
+.payImg{
+  max-width: 100%;
 }
