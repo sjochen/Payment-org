@@ -7,12 +7,12 @@ function PaymentCard(props) {
     <div className="card">
       <div className="content">
         <h3><strong>Payee:</strong></h3>
-        <p><strong>Name:</strong> {props.Payee.Name}</p>
+        <p className="inv"><strong>Name:</strong> {props.Payee.Name}</p>
         <p><strong>Fax:</strong> {props.Payee.Fax}  <strong>Phone:</strong> {props.Payee.Phone}</p>
-        <p><strong>Address:</strong> {props.Payee.Address.Address1}</p>
+        <p className="inv"><strong>Address:</strong> {props.Payee.Address.Address1}</p>
         <p><strong>City/State:</strong> {props.Payee.Address.City}, {props.Payee.Address.StateOrProvince} <strong>Postal Code:</strong> {props.Payee.Address.PostalCode}</p>
         <p><strong>Country:</strong> {props.Payee.Address.Country}</p>
-        <p><strong>Attention:</strong> {props.Payee.Attention}</p>
+        <p className="inv"><strong>Attention:</strong> {props.Payee.Attention}</p>
         <p><strong>Submission Date:</strong> {props.Payee.SubmissionDate}</p>
         <h3><strong>Payment:</strong></h3>
         <p className="inv"><strong>PAN:</strong> {props.Payment.PAN}</p>
