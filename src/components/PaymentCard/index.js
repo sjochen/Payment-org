@@ -3,6 +3,7 @@ import "./style.css";
 
 function PaymentCard(props) {
   return (
+    // Each card is created here and some of the styling. Props are passed in from the App.js.
     <div className="card">
       <div className="content">
         <h3><strong>Payee:</strong></h3>
@@ -21,6 +22,7 @@ function PaymentCard(props) {
         <h3><strong>Remittance:</strong></h3>
         {props.Remittance.map((name, index) => {
           return (
+            // A second map is done to get the info from the remittance array and then returned to the correct card
             <div className="rem">
               <p className="inv"><strong>Payor Name:</strong> <mark className="highlight">{name.PayorName}</mark></p>
               <p className="inv"><strong>Invoice No.:</strong> <mark className="highlight">{name.InvoiceNo}</mark> <strong>Payor ID:</strong> <mark className="highlight">{name.PayorId}</mark></p>

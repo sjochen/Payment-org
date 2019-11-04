@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
       pay,
       currentPage: 1,
-      todosPerPage: 3
+      payeesPerPage: 3
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -24,16 +24,16 @@ class App extends Component {
 
 
   render() {
-    const { pay, currentPage, todosPerPage } = this.state;
+    const { pay, currentPage, payeesPerPage } = this.state;
 
-    // Logic for displaying todos
-    const indexOfLastTodo = currentPage * todosPerPage;
-    const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
-    const currentTodos = pay.slice(indexOfFirstTodo, indexOfLastTodo);
+    // Logic for displaying payees
+    const indexOfLastPayee = currentPage * payeesPerPage;
+    const indexOfFirstPayee = indexOfLastPayee - payeesPerPage;
+    const currentPayees = pay.slice(indexOfFirstPayee, indexOfLastPayee);
 
     // Logic for displaying page numbers
     const pageNumbers = [];
-    for (let i = 1; i <= Math.ceil(pay.length / todosPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(pay.length / payeesPerPage); i++) {
       pageNumbers.push(i);
     }
 
@@ -51,7 +51,8 @@ class App extends Component {
     return (
       <Wrapper>
         <Title><img className="payImg" src={logo} alt="Logo" /></Title>
-        {currentTodos.map(pay => (
+        {/* Map over the json and pull out the desired data */}
+        {currentPayees.map(pay => (
           <PaymentCard
             Payee={pay.Payee}
             Payment={pay.Payment}

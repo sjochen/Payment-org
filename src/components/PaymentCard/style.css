@@ -1,3 +1,4 @@
+/* Payee card styling */
 .card {
   background: #fff;
   border-radius: 2px;
@@ -16,7 +17,7 @@
 .rem{
   border-bottom: 2px solid;
 }
-
+/* Larger text and highlight on important areas */
 .amount{
   font-size: 150%;
 }
