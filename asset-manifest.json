@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Payment-org/static/css/main.4308c686.chunk.css",
+    "main.js": "/Payment-org/static/js/main.fa117c63.chunk.js",
+    "main.js.map": "/Payment-org/static/js/main.fa117c63.chunk.js.map",
+    "runtime-main.js": "/Payment-org/static/js/runtime-main.a25c1626.js",
+    "runtime-main.js.map": "/Payment-org/static/js/runtime-main.a25c1626.js.map",
+    "static/css/2.266e55a5.chunk.css": "/Payment-org/static/css/2.266e55a5.chunk.css",
+    "static/js/2.156974b3.chunk.js": "/Payment-org/static/js/2.156974b3.chunk.js",
+    "static/js/2.156974b3.chunk.js.map": "/Payment-org/static/js/2.156974b3.chunk.js.map",
+    "index.html": "/Payment-org/index.html",
+    "precache-manifest.ea33139e723c4c1a1f63521622210f45.js": "/Payment-org/precache-manifest.ea33139e723c4c1a1f63521622210f45.js",
+    "service-worker.js": "/Payment-org/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/Payment-org/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.4308c686.chunk.css.map": "/Payment-org/static/css/main.4308c686.chunk.css.map",
+    "static/media/paymerang.png": "/Payment-org/static/media/paymerang.49c67964.png"
+  }
+}
